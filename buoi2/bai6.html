@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var math=+prompt("Nhap diem Toan:");
+        var lit=+prompt("Nhap diem Van:");
+        var eng=+prompt("Nhap diem Van:");
+        var average=(math+lit+eng)/3;
+        if(average<5){
+            console.log("xếp loại yếu");
+        } else if(average<=6.4){
+            console.log("xếp loại trung bình");
+        } else if(average<=7.9){
+            console.log("xếp loại khá");
+        } else if(average<=10){
+           console.log("xếp loại giỏi");
+        } else{
+            console.log("INVALID");
+        }
+    </script>
+</body>
+</html>

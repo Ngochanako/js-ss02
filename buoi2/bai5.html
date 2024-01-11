@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=prompt("Nhap so thang trong nam:");
+        var d=new Date();
+        var year=d.getFullYear();
+        if(x==4||x==6||x==9||x==11){
+            console.log("So ngay cua thang la 30");
+        } else if(x==2){
+            if(year%4==0&&year%100!=0){
+                console.log("Số ngày của tháng là 29");
+            } else{
+                console.log("Tháng có 28 ngày");
+            }
+        } else{
+            console.log("Tháng có 31 ngày");
+        }
+    </script>
+</body>
+</html>
